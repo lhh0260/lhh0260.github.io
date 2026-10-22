@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张三 | 个人学术主页</title>
+  <meta name="description" content="个人学术主页 —— 研究方向、论文发表、教育经历与联系方式。" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" data-nav-brand>个人主页</a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">简介</a>
+        <a href="#research" class="nav-link">研究兴趣</a>
+        <a href="#skills" class="nav-link">技能</a>
+        <a href="#news" class="nav-link">最新动态</a>
+        <a href="#publications" class="nav-link">论文</a>
+        <a href="#education" class="nav-link">教育经历</a>
+        <a href="#projects" class="nav-link">实践经历</a>
+        <a href="#awards" class="nav-link">荣誉</a>
+        <a href="#contact" class="nav-link">联系</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式">
+          <span class="theme-icon">◐</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="展开菜单">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-avatar">
+          <img id="avatarImg" src="assets/img/avatar.svg" alt="个人照片" />
+        </div>
+        <div class="hero-text">
+          <h1 id="heroName">张三</h1>
+          <p class="hero-en" id="heroEnName">San Zhang</p>
+          <p class="hero-role" id="heroRole">硕士研究生 · 计算机科学与技术</p>
+          <p class="hero-affil" id="heroAffil">XX大学 计算机学院 · 智能计算实验室</p>
+          <p class="hero-bio" id="heroBio">
+            这里是你的个人简介。建议写 2–4 句话：你是谁、做什么方向、用什么方法、解决什么问题。
+          </p>
+          <div class="hero-links" id="heroLinks"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 简介 ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">个人简介</h2>
+        <div class="prose" id="aboutBody"></div>
+      </div>
+    </section>
+
+    <!-- ============ 研究方向 ============ -->
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section-title">研究兴趣</h2>
+        <div class="card-grid" id="researchGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 专业技能 ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">专业技能</h2>
+        <div class="card-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 最新动态 ============ -->
+    <section id="news" class="section">
+      <div class="container">
+        <h2 class="section-title">最新动态</h2>
+        <ul class="news-list" id="newsList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 论文 ============ -->
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">论文发表</h2>
+        <div class="filter-bar">
+          <div class="chips" id="pubFilters"></div>
+          <input class="search-input" id="pubSearch" type="search" placeholder="搜索标题 / 作者 / 会议期刊…" />
+        </div>
+        <ul class="pub-list" id="pubList"></ul>
+        <p class="empty-tip" id="pubEmpty" hidden>没有匹配的论文。</p>
+      </div>
+    </section>
+
+    <!-- ============ 教育经历 ============ -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">教育经历</h2>
+        <ol class="timeline" id="eduTimeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 项目 ============ -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">实践经历</h2>
+        <div class="card-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 荣誉奖励 ============ -->
+    <section id="awards" class="section">
+      <div class="container">
+        <h2 class="section-title">荣誉与奖励</h2>
+        <ul class="award-list" id="awardList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">联系方式</h2>
+        <div class="contact-box" id="contactBox"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span id="footerText"></span>
+      <span class="footer-tech">Built with WorkBuddy · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
